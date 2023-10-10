@@ -17,6 +17,9 @@
         table {
           border-collapse: collapse;
         }
+        div{
+            margin-bottom: 100px;
+        }
       
         th, td {
           border: 1px solid black;
@@ -29,25 +32,69 @@
         .e{
             text-align: left;
         }
+        .c{
+            text-align: center;
+        }
       </style>
 </head>
 <body>
-    <table>
-        <tr>
-          <th class="e">1</th>
-          <th class="e">2</th>
-          <th class="e">3</th>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td class="d">7</td>
-          <td class="d">8</td>
-          <td class="d">9</td>
-        </tr>
-      </table>
+    <div>
+        <table>
+            <tr>
+              <th class="e">1</th>
+              <th class="e">2</th>
+              <th class="e">3</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td class="d">7</td>
+              <td class="d">8</td>
+              <td class="d">9</td>
+            </tr>
+          </table>
+          <br>
+          <table>
+    </div>
+    <div>
+        <table>
+            <tr>
+              <th class="e">1</th>
+              <th class="e">2</th>
+              <th class="e">3</th>
+            </tr>
+            <tr>
+              <td class="c" colspan="3">4</td>
+            </tr>
+            <tr>
+              <td class="e">7</td>
+              <td class="e">8</td>
+              <td class="e">9</td>
+            </tr>
+          </table>
+          <br>
+          <table>
+    </div>
+    <div>
+        <table>
+            <tr>
+              <th class="e">1</th>
+              <th class="e">2</th>
+              <th rowspan="3"  class="c">3</th>
+            </tr>
+            <tr>
+              <td class="c" colspan="2">4</td>
+            </tr>
+            <tr>
+              <td class="e">5</td>
+              <td class="e">6</td>
+            </tr>
+          </table>
+          <br>
+          <table>
+    </div> 
 </body>
 </html>
